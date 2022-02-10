@@ -1,10 +1,6 @@
 import {
   InformationCircleIcon,
   ChartBarIcon,
-  SunIcon,
-  MoonIcon,
-  CakeIcon,
-  AcademicCapIcon,
 } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
@@ -99,11 +95,6 @@ function App() {
       document.documentElement.classList.remove('dark')
     }
   }, [isDarkMode])
-
-  const handleDarkMode = (isDark: boolean) => {
-    setIsDarkMode(isDark)
-    localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  }
 
   const handleHardMode = (isHard: boolean) => {
     setIsHardMode(isHard)
